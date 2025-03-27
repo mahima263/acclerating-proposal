@@ -338,7 +338,7 @@
                                 <h5 class="card-title">Residential Building</h5>
                                 <p class="card-text">
                                     Expanding SBRA, hostels, and faculty apartments is essential for accommodating
-                                   
+
                                     <a href="#" class="read-more" data-bs-toggle="modal"
                                         data-bs-target="#modal-residential">Read More</a>
                                 </p>
@@ -442,10 +442,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">Academic Buildings</h5>
                                 <p class="card-text">
-                                    Expanding lecture halls is essential to 
-accommodate growing student intake, enable 
-modern teaching methods <a
-                                        href="#" class="read-more" data-bs-toggle="modal"
+                                    Expanding lecture halls is essential to
+                                    accommodate growing student intake, enable
+                                    modern teaching methods <a href="#" class="read-more" data-bs-toggle="modal"
                                         data-bs-target="#modal-academic-buildings">Read More</a>
                                 </p>
                                 <div class="funding-badge">
@@ -546,7 +545,7 @@ modern teaching methods <a
                                 <h5 class="card-title">Central Research Facilities</h5>
                                 <p class="card-text">
                                     Ensuring mental health and well-being at IIT Kanpur is crucial with its growing
-                                        community of over 10,000 students
+                                    community
                                     <a href="#" class="read-more" data-bs-toggle="modal"
                                         data-bs-target="#modal-research-facilities">Read More</a>
                                 </p>
@@ -647,7 +646,8 @@ modern teaching methods <a
                             <div class="card-body">
                                 <h5 class="card-title">Center for Mental Health & Wellbeing</h5>
                                 <p class="card-text">
-                                    Ensuring mental health and well-being at IIT Kanpur is crucial <a href="#" class="read-more" data-bs-toggle="modal"
+                                    Ensuring mental health and well-being at IIT Kanpur is crucial <a href="#"
+                                        class="read-more" data-bs-toggle="modal"
                                         data-bs-target="#modal-mental-health">Read More</a>
                                 </p>
                                 <div class="funding-badge">
@@ -695,8 +695,9 @@ modern teaching methods <a
                             <div class="card-body">
                                 <h5 class="card-title">SAC Extension</h5>
                                 <p class="card-text">
-                                    The construction of a new Student Activity Centre (SAC) is essential to support the growing 
-                                    
+                                    The construction of a new Student Activity Centre (SAC) is essential to support the
+                                    growing
+
                                     <a href="#" class="read-more" data-bs-toggle="modal"
                                         data-bs-target="#modal-sac-extension">Read More</a>
                                 </p>
@@ -917,7 +918,7 @@ modern teaching methods <a
                                 <h5 class="card-title">Student Initiatives</h5>
                                 <p class="card-text">
                                     Students are central to IIT Kanpur’s mission, and dedicated initiatives ensure their
-                                    holistic growth
+
                                     <a href="#" class="read-more" data-bs-toggle="modal"
                                         data-bs-target="#modal-student-initiatives">Read More</a>
                                 </p>
@@ -1045,8 +1046,7 @@ modern teaching methods <a
                             <div class="card-body">
                                 <h5 class="card-title">Quantum Technology Center</h5>
                                 <p class="card-text">
-                                    The proposed Quantum Technology Center at IIT Kanpur (QTC@IITK) aims to drive
-                                    innovation
+                                    The proposed Quantum Technology Center at IIT Kanpur (QTC@IITK) aims to
                                     <a href="#" class="read-more" data-bs-toggle="modal"
                                         data-bs-target="#modal-quantum-technology">Read More</a>.
                                 </p>
@@ -1257,7 +1257,7 @@ modern teaching methods <a
                                 <h5 class="card-title">Center of Excellence for Semiconductor Packaging</h5>
                                 <p class="card-text">
                                     The semiconductor industry is rapidly growing, driving demand for skilled
-                                    professionals
+
                                     <a href="#" class="read-more-link" data-bs-toggle="modal"
                                         data-bs-target="#modal-semiconductor-packaging">Read More...</a>
                                 </p>
@@ -1309,7 +1309,7 @@ modern teaching methods <a
                             <div class="card-body">
                                 <h5 class="card-title">STEPP- School of Technology, Economics, and Public Policy</h5>
                                 <p class="card-text">
-                                    The traditional public policy paradigm is 
+                                    The traditional public policy paradigm is undergoing a
                                     <a href="#" class="read-more-link" data-bs-toggle="modal"
                                         data-bs-target="#modal-stepp">Read More...</a>
                                 </p>
@@ -1361,13 +1361,14 @@ modern teaching methods <a
         </section>
         <!-- Custom CSS -->
         <style>
-             .application-card {
+            .application-card {
                 transition: transform 0.3s ease-in-out;
                 border: none;
                 border-radius: 15px;
                 overflow: hidden;
                 box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
                 height: 100%;
+                padding: 10px;
             }
 
             .application-card:hover {
@@ -1381,24 +1382,55 @@ modern teaching methods <a
                 border-top-left-radius: 15px;
                 border-top-right-radius: 15px;
             }
-          
 
-        
+
+
             /* Title and Text */
             .card-title {
                 color: #b5482d;
                 font-weight: bold;
                 margin-bottom: 15px;
+                white-space: nowrap;
+                overflow: hidden;
+                /* Hides overflowing content */
+                text-overflow: ellipsis;
+                /* Adds '...' at the end */
+                width: 100%;
             }
 
             .card-text {
                 color: #555;
                 font-size: 14px;
                 margin-bottom: 15px;
+                display: -webkit-box;
+
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-height: 3em;
+
+                line-height: 1.5em;
+                /* Ensures two lines */
+                width: 100%;
+                /* Responsive width */
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                /* Always take two lines */
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                min-height: 3em;
+                /* Ensures two lines space */
+
+                line-height: 1.5em;
+                /* Adjust for exact two lines */
+                width: 100%;
             }
-            .funding-badge{
+
+            .funding-badge {
                 margin-top: 15px;
             }
+
             /* Funding Badge Container */
             .funding-badge-container {
                 display: flex;
